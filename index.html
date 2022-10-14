@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop - Responsive Navigation</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="assets/drop-icon.svg">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/c74b5ef5d5.js" crossorigin="anonymous"></script>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- logo -->
+        <div class="wrapper-navbar">
+            <div class="wrapper-logo">
+
+                <a href=""><img src="assets/drop-icon.svg" alt="Logo" class="logo-img"> 
+                    <a href="#"
+                        class="logo-type">Drop</a></a>
+            </div>
+            <!-- nav -->
+            <nav>
+                <img src="assets/close.svg" class="close-btn" alt="Close Menu">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="mobile-cart-menu">
+                <!-- buttons -->
+                <div class="wrapper-btns">
+                    <a href="#" class="btn primary-btn">Sign Up</a>
+                    <a href="#" class="btn secondary-btn">Sign In</a>
+                </div>
+                <img src="assets/menu.svg" class="menu-btn" alt="Open Menu">
+            </div>
+
+
+
+
+
+        </div>
+
+    </header>
+
+    <script>
+
+        document.querySelector('.menu-btn').addEventListener("click", () => {
+            document.querySelector('nav').classList.toggle("open")
+        })
+
+
+        document.querySelector('.close-btn').addEventListener("click", () => {
+            document.querySelector('nav').classList.toggle("open")
+        })
+
+        // document.querySelector(".menu-btn").addEventListener("click", function () {
+        //     document.querySelector("nav").classList.toggle("open")
+        // });
+
+        // document.querySelector(".close-btn").addEventListener("click", function () {
+        //     document.querySelector("nav").classList.toggle("open")
+        // });
+
+    </script>
+
+</body>
+
+</html>

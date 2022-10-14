@@ -1,0 +1,197 @@
+/* font-family: 'Inter', sans-serif; */
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: #fff;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+header {
+    background: #fff;
+    padding: 1.2em;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11),
+        0 2px 2px rgba(0, 0, 0, 0.11),
+        0 4px 4px rgba(0, 0, 0, 0.11),
+        0 6px 8px rgba(0, 0, 0, 0.11),
+        0 16px 32px rgba(0, 0, 0, 0.11),
+        0 8px 16px rgba(0, 0, 0, 0.11);
+}
+
+.wrapper-navbar {
+    align-items: center;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+/* sliding menu - below */
+/* use top and right to move around while building */
+nav {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 50%;
+    background: #fff;
+    height: 100vh;
+    padding: 4.6em;
+    /* for animation */
+    transition: right .5s ease-in-out;
+    background: #fff;
+    padding: 1.2em;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11),
+        0 2px 2px rgba(0, 0, 0, 0.11),
+        0 4px 4px rgba(0, 0, 0, 0.11),
+        0 6px 8px rgba(0, 0, 0, 0.11),
+        0 16px 32px rgba(0, 0, 0, 0.11),
+        0 8px 16px rgba(0, 0, 0, 0.11);
+}
+
+.menu-btn {
+    width: 3rem;
+    cursor: pointer;
+}
+
+.close-btn {
+    cursor: pointer;
+    display: block;
+    width: 2rem;
+    margin-left: auto;
+    margin-bottom: 6.6rem;
+    color: #fff;
+}
+
+/* sliding menu - above */
+
+.wrapper-logo {
+    align-items: center;
+    display: flex;
+}
+
+.logo-type {
+    color: #0A157A;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+ul {
+    display: flex;
+    /* sliding menu - below */
+    flex-direction: column;
+    align-items: flex-end;
+    /* sliding menu - above */
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    /* Mobile below - not for desktop */
+    gap: 4.3em;
+}
+
+li {
+    /* Use this for Desktop */
+    /* padding: 0 2em; */
+}
+
+li a {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+
+
+.btn {
+    border-radius: .4em;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    padding: 1.3em 2.4em;
+    margin: 0 .4em;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background: #191f5f;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background: #232c87;
+}
+
+.secondary-btn {
+    border: 1px solid #0A157A;
+    color: #0A157A;
+}
+
+.secondary-btn:hover {
+    background: #e7e8f2;
+}
+
+/* For mobile nav below */
+.mobile-cart-menu {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.open {
+    right: 0;
+    padding: 3em;
+    background: #191f5f;
+}
+
+/* For mobile nav above */
+
+@media screen and (min-width: 600px) {
+
+    .menu-btn,
+    .close {
+        display: none;
+    }
+
+    nav {
+        position: unset;
+        height: auto;
+        padding: 0;
+        width: auto;
+        box-shadow: none;
+        background: none;
+    }
+
+    ul {
+        flex-direction: row;
+    }
+
+    li a {
+        color: #414250;
+    }
+
+    .close-btn {
+        display: none;
+    }
+
+    ul li a:hover {
+        color: #25262e;
+        font-weight: bold;
+    }
+
+    .open {
+        right: 0;
+        padding: 3em;
+        background: none;
+    }
+
+    .logo-img {
+        width: 3.2em;
+    }
+}
